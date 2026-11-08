@@ -317,7 +317,7 @@
       (dayF.f ? '<div class="fbox-in">' + math(dayF.f, 'big') + '</div>' : '<p class="muted">' + txt(dayF.ruleText || '') + '</p>') +
       '<p class="daily-l">' + (dm.lines && dm.lines[0] ? txt(dm.lines[0].x) : '') + '</p><a class="btn sm" href="#/card/' + esc(dayF.id) + '">Открыть карточку →</a></div></section>' +
       '<div class="ticker" aria-hidden="true"><div class="tk-track">' + tkItems + tkItems + '</div></div>' +
-      '<section class="bento"><div class="b b-ring">' + ring(total ? got / total : 0, 96, '<span data-count="' + got + '">' + got + '</span>/' + total) + '<div><b>Освоено формул</b><small>из ' + total + ' в выбранном классе</small></div></div>' +
+      '<section class="bento"><div class="b b-ring">' + ring(total ? got / total : 0, 96, '<span data-count="' + got + '">' + got + '</span>/' + total) + '<div><b>Освоено формул</b><small>из ' + total + ' в выбранном разделе</small></div></div>' +
       '<div class="b"><span class="big-n">🔥 <span data-count="' + st + '">' + st + '</span></span><b>Дней подряд</b><small>' + (st ? 'так держать!' : 'позанимайся сегодня') + '</small></div>' +
       '<div class="b"><span class="big-n">' + rk.r[2] + ' <span data-count="' + (meta.xp || 0) + '">' + (meta.xp || 0) + '</span></span><b>' + rk.r[1] + '</b><small>' + (rk.nxt ? 'до «' + rk.nxt[1] + '» ещё ' + (rk.nxt[0] - (meta.xp || 0)) + ' XP' : 'максимальный ранг!') + '</small></div>' +
       '<a class="b b-due" href="#/play/recall?due=1"><span class="big-n">⏰ <span data-count="' + due + '">' + due + '</span></span><b>К повторению</b><small>' + (due ? 'нажми — повторим сейчас' : 'пока всё свежее') + '</small></a>' +
